@@ -25,7 +25,6 @@ class Handler(http.server.SimpleHTTPRequestHandler):
             qs_dict = parse_qs(o.query)
             author_ids = qs_dict.get('author_ids') or AUTHOR_IDS
             link = LINK_STUB.format(author_ids[0])
-            import pdb;pdb.set_trace()
             xml = generate_rss_feed_for_author_link(link)
 
             self.send_response(200)
