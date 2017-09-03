@@ -1,2 +1,0 @@
-# m h  dom mon dow   command
-* * * * * /srv/wsj-rss/env/bin/python /srv/wsj-rss/wsj_to_rss.py "https://www.wsj.com/news/author/7998" > /srv/wsj-rss/rss.xml
